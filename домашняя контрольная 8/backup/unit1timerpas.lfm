@@ -1,0 +1,70 @@
+object Form1: TForm1
+  Left = 316
+  Height = 202
+  Top = 180
+  Width = 423
+  Caption = 'Form1'
+  ClientHeight = 202
+  ClientWidth = 423
+  DesignTimePPI = 120
+  OnCreate = FormCreate
+  LCLVersion = '2.2.4.0'
+  object EditTimer: TEdit
+    Left = 176
+    Height = 28
+    Top = 166
+    Width = 104
+    ReadOnly = True
+    TabOrder = 0
+  end
+  object Button_delete: TButton
+    Left = 320
+    Height = 31
+    Top = 163
+    Width = 96
+    Caption = 'Button_delete'
+    OnClick = Button_deleteClick
+    TabOrder = 1
+  end
+  object TimeEdit1: TTimeEdit
+    Left = 176
+    Height = 28
+    Top = 76
+    Width = 137
+    ButtonWidth = 29
+    NumGlyphs = 1
+    MaxLength = 0
+    TabOrder = 2
+  end
+  object Button_create: TButton
+    Left = 320
+    Height = 31
+    Top = 76
+    Width = 96
+    Caption = 'Button_create'
+    OnClick = Button_createClick
+    TabOrder = 3
+  end
+  object List_of_timers: TListBox
+    Left = 32
+    Height = 118
+    Top = 76
+    Width = 125
+    ItemHeight = 0
+    OnClick = List_of_timersClick
+    TabOrder = 4
+  end
+  object EditTime_now: TEdit
+    Left = 176
+    Height = 28
+    Top = 24
+    Width = 100
+    OnChange = EditTime_nowChange
+    TabOrder = 5
+  end
+  object Timer1: TTimer
+    OnTimer = EditTime_nowChange
+    Left = 296
+    Top = 13
+  end
+end
